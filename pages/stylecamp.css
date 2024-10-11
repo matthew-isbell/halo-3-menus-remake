@@ -1,0 +1,227 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+.classmenu {
+    list-style-type: none;
+    margin-top: 0vh;
+    margin-left: 12vh;
+    padding-left: 0;
+    padding-top: 5vh;
+    width: 70vh;
+    background-color: #00000032;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+/* Default styles for the navbar links */
+.classmenu li a {
+    display: block;
+    color: #8094B4;
+    padding: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.classmenu li a:hover {
+    animation: pulse 2.0s infinite;
+}
+
+/* Style for items 2-6 */
+.classmenu li:nth-child(n+2):nth-child(-n+6) {
+    background-color: #40568455;
+}
+
+/* Disable hover effect for items 7 and beyond */
+.classmenu li:nth-child(n+7) a {
+    pointer-events: none;
+    color: #8094B4;
+}
+
+/* Specific styling for 7th item */
+.classmenu li:nth-child(7) a {
+    color: white;
+    border-top: 2px solid rgba(129, 188, 206, 0.368);
+    border-bottom: 2px solid rgba(129, 188, 206, 0.368);
+    display: inline-block;
+    width: 68vh;
+}
+
+/* Specific styling for 13th item */
+.classmenu li:nth-child(13) a {
+    color: white;
+    border-top: 2px solid rgba(129, 188, 206, 0.219);
+    border-bottom: 2px solid rgba(129, 188, 206, 0.219);
+    display: inline-block;
+    background-color: #1a191966;
+    width: 68vh;
+    padding-top: 2vh;
+}
+
+/* Fix for the 14th item */
+.classmenu li:nth-child(14) {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #40568455;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding-bottom: 100%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+
+/* Define the keyframes for pulsing from light to dark */
+@keyframes pulse {
+    0% {
+        background-color: #54362E; /* Darker */
+        color: #b6b6b6; /* Light text */
+    }
+    50% {
+        background-color: #714834; /* Brighter */
+        color: #b6b6b6; /* Brighter text */
+    }
+    100% {
+        background-color: #54362E; /* Back to darker */
+        color: #b6b6b6;
+    }
+}
+
+/* For the first list item, larger and no hover effect */
+.classmenu li:first-child a {
+    color: #ced7e4;
+    pointer-events: none; /* Prevent hover and click events */
+    border-bottom: 2px solid #3f455378;
+    font-size: 40px;
+}
+
+/* Logo image styles */
+#logo img {
+    padding-top: 4vh;
+    margin-left: 0;
+    width: 100%;
+    height: 25vh;
+}
+
+#conticon {
+    width: 4vh;
+    height: auto;
+    vertical-align: middle;
+    padding-right: 1px;
+    padding-left: 6px;
+}
+
+
+#lobbyList {
+    display: none;
+    position: absolute;
+    top: 13vh;
+    left: 41vh;
+    width: 20vw;
+    background-color: #4A505C;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+#lobbyList ul {
+    margin: 0;
+    padding: 0;
+}
+
+.lobby-list li {
+    list-style-type: none;
+    width: 100%;
+    padding: 3px 0; /* Vertical padding */
+    padding-left: 25px; /* Left padding */
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+/* Apply hover effect to highlight entire padding area */
+.lobby-list li:hover {
+    animation: pulse 2.0s infinite;
+}
+
+.lobby-list li a {
+    display: block;
+    color: #8094B4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0; /* Remove extra padding from a tag */
+}
+
+/* Active class for the "Switch Lobby" item */
+.switch-lobby-active {
+    background-color: #4A505C;
+    color: #ccd0d7; /* Ensure text color stays consistent */
+}
+
+
+
+
+#networkSel {
+    display: none;
+    position: absolute;
+    top: 13vh;
+    left: 41vh;
+    width: 20vw;
+    background-color: #4A505C;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+#networkSel ul {
+    margin: 0;
+    padding: 0;
+}
+
+.lobby-list li {
+    list-style-type: none;
+    width: 100%;
+    padding: 3px 0; /* Vertical padding */
+    padding-left: 25px; /* Left padding */
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+/* Apply hover effect to highlight entire padding area */
+.lobby-list li:hover {
+    animation: pulse 2.0s infinite;
+}
+
+.lobby-list li a {
+    display: block;
+    color: #8094B4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0; /* Remove extra padding from a tag */
+}
+
+/* Active class for the "Switch Lobby" item */
+.switch-lobby-active {
+    background-color: #4A505C;
+    color: #ccd0d7; /* Ensure text color stays consistent */
+}

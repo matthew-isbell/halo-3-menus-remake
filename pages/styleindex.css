@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 60vh;
+  margin-left: 12vh;
+  padding-left: 0;
+  padding-bottom: 100%;
+  width: 45vh;
+  background-color: #00000063;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  backdrop-filter: blur(5px); /* Add blur effect */
+  -webkit-backdrop-filter: blur(5px); /* For Safari support */
+}
+
+/* For the navbar links */
+li a {
+    display: block;
+    color: #8094B4;
+    padding: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition when hovered */
+}
+
+/* The hover animation */
+li a:hover {
+    animation: pulse 2.0s infinite;
+}
+
+/* Define the keyframes for pulsing from light to dark */
+@keyframes pulse {
+    0% {
+        background-color: #54362E; /* Darker */
+        color: #b6b6b6; /* Light text */
+    }
+    50% {
+        background-color: #714834; /* Brighter */
+        color: #b6b6b6; /* Brighter text */
+    }
+    100% {
+        background-color: #54362E; /* Back to darker */
+        color: #b6b6b6;
+    }
+}
+
+li:first-child a {
+  color: #4e5b6e;
+  pointer-events: none; /* Prevent hover and click events */
+  border-bottom: 2px solid #3f455378;
+  padding: 10px;
+}
+
+
+#logo {
+  position: absolute;
+  top: 65vh;
+  left: 50%;
+  z-index: 10; /* Ensure the logo appears on top of the video */
+}
+
+#logo img {
+  width: 80vh;
+  height: auto;
+}
+
+#bungie {
+  position: absolute;
+  top: 85vh;
+  left: 75%;
+  z-index: 10; /* Ensure the logo appears on top of the video */
+}
+
+#bungie img {
+  width: 25vh; /* Adjust the size of the logo as needed */
+  height: auto;
+}

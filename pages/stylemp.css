@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-top: 0vh;
+    margin-left: 12vh;
+    padding-left: 0;
+    padding-top: 5vh;
+    padding-bottom: 100%;
+    width: 70vh;
+    background-color: #00000032;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    backdrop-filter: blur(5px); /* Add blur effect */
+    -webkit-backdrop-filter: blur(5px); /* For Safari support */
+  }
+  
+ /* Default styles for the navbar links */
+li a {
+    display: block;
+    color: #8094B4;
+    padding: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition when hovered */
+}
+
+/* Hover effect */
+li a:hover {
+    animation: pulse 2.0s infinite; /* Apply hover animation to all items by default */
+}
+
+li:nth-child(n+2):nth-child(-n+6) {
+    background-color: #40568455; /* Brighter background */
+}
+
+/* Disable hover effect for specific items after "START GAME" */
+li:nth-child(n+7) a {
+    pointer-events: none; /* Prevent hover and click events */
+    color: #8094B4; /* Ensure text color stays the same */
+}
+
+/* Define the keyframes for pulsing from light to dark */
+@keyframes pulse {
+    0% {
+        background-color: #54362E; /* Darker */
+        color: #b6b6b6; /* Light text */
+    }
+    50% {
+        background-color: #714834; /* Brighter */
+        color: #b6b6b6; /* Brighter text */
+    }
+    100% {
+        background-color: #54362E; /* Back to darker */
+        color: #b6b6b6;
+    }
+}
+
+/* this is the one for the prompts at the bottom of the screen */
+li:nth-child(11) a {
+    color: white; /* Make the text white */
+    border-top: 2px solid rgba(129, 188, 206, 0.219); /* Add a white border */
+    border-bottom: 2px solid rgba(129, 188, 206, 0.219); /* Add a white border */
+    display: inline-block; /* Ensure the border wraps around the content */
+    background-color: #1a191966;
+    width: 68vh;
+    padding-top: 4vh;
+}
+
+/* For the first list item, larger and no hover effect */
+li:first-child a {
+    color: #ced7e4;
+    pointer-events: none; /* Prevent hover and click events */
+    border-bottom: 2px solid #3f455378;
+    font-size: 40px;
+}
+
+/* Logo image styles */
+#logo img {
+    padding-top: 5vh;
+    margin-left: 0;
+    width: 68vh;
+    height: auto;
+}
+
+
+#conticon {
+    width: 4vh;
+    height: auto;
+    vertical-align: middle;
+    padding-right: 1px;
+    padding-left: 6px;
+}
+
+
+#lobbyList {
+    display: none;
+    position: absolute;
+    top: 13vh;
+    left: 41vh;
+    width: 20vw;
+    background-color: #4A505C;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+#lobbyList ul {
+    margin: 0;
+    padding: 0;
+}
+
+.lobby-list li {
+    list-style-type: none;
+    width: 100%;
+    padding: 3px 0; /* Vertical padding */
+    padding-left: 25px; /* Left padding */
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+/* Apply hover effect to highlight entire padding area */
+.lobby-list li:hover {
+    animation: pulse 2.0s infinite;
+}
+
+.lobby-list li a {
+    display: block;
+    color: #8094B4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0; /* Remove extra padding from a tag */
+}
+
+/* Active class for the "Switch Lobby" item */
+.switch-lobby-active {
+    background-color: #4A505C;
+    color: #ccd0d7; /* Ensure text color stays consistent */
+}
