@@ -17,7 +17,7 @@
         <ul class="classmenu">
             <li><a href="#lobby">CAMPAIGN LOBBY</a></li>
             <li><a href="#switchlobby" id="switchLobbyBtn" class="switch-lobby">SWITCH LOBBY</a></li>
-            <li><a href="#network">NETWORK: XBOX LIVE (OPEN PARTY)</a></li>
+            <li><a href="#network" id="switchNetworkBtn" class="switch-networks">NETWORK: XBOX LIVE (OPEN PARTY)</a></li>
             <li><a href="#mission">MISSION: BLAM!</a></li>
             <li><a href="#difficulty">DIFFICULTY: BLAM!</a></li>
             <li><a href="#start">START GAME</a></li>
@@ -49,9 +49,24 @@
     <div id="networkSel" class="network-select">
         <ul class="classNetwork">
             <li><a href="#selectNetwork">SELECT NETWORK MODE</a></li>
-            <li><a href="#selectLive">XBOX LIVE</a></li>
-            <li><a href="#selectLink">SYSTEM LINK</a></li>
-            <li><a href="#selectLocal">LOCAL</a></li>
+            <li>
+                <a href="#selectLive" id="xboxLiveBtn">XBOX LIVE</a>
+                <div class="option-box" id="xboxLiveMenu">
+                    <a href="#openParty">OPEN PARTY</a>
+                    <a href="#friendsOnly">FRIENDS ONLY</a>
+                    <a href="#inviteOnly">INVITE ONLY</a>
+                </div>
+            </li>
+            <li>
+                <a href="#selectLink" id="systemLinkBtn">SYSTEM LINK</a>
+                <div class="option-box" id="systemLinkMenu">
+                    <a href="#hostGame">HOST GAME</a>
+                    <a href="#findGame">FIND GAME...</a>
+                </div>
+            </li>
+            <li>
+                <a href="#selectLocal" id="localBtn">LOCAL</a>
+            </li>
         </ul>
     </div>
 
