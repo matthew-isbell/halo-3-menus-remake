@@ -1,0 +1,11 @@
+{
+  "type": "menu",
+  "title": "Campaign",
+  "items": [
+    "SWITCH LOBBY",
+    "NETWORK:",
+    "MISSION:",
+    "DIFFICULTY:",
+    "START GAME"
+  ]
+}

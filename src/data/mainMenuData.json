@@ -1,0 +1,12 @@
+{
+  "type": "menu",
+  "title": "Main Menu",
+  "items": [
+    "START SOLO GAME",
+    "CAMPAIGN",
+    "MULTIPLAYER",
+    "CUSTOM GAMES",
+    "FORGE",
+    "THEATER"
+  ]
+}
