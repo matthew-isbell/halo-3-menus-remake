@@ -3,10 +3,10 @@
   "title": "Main Menu",
   "items": [
     "START SOLO GAME",
-    "CAMPAIGN",
-    "MULTIPLAYER",
-    "CUSTOM GAMES",
-    "FORGE",
-    "THEATER"
+    { "label": "CAMPAIGN", "redirect": "campaign.js" },
+    { "label": "MULTIPLAYER", "redirect": "multiplayer.js" },
+    { "label": "CUSTOM GAMES", "redirect": "customgames.js" },
+    { "label": "FORGE", "redirect": "forge.js" },
+    { "label": "THEATER", "redirect": "theater.js" }
   ]
 }
