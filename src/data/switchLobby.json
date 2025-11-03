@@ -1,0 +1,11 @@
+{
+  "type": "options",
+  "title": "switchLobby",
+  "items": [
+        { "gamemode": "CAMPAIGN", "subtext": "Take your party directly to Campaign to defeat the Covenant, save the galaxy, and finish the fight!" },
+        { "gamemode": "MULTIPLAYER", "subtext": "Take your party to Xbox LIVE and into the frenetic action of live combat, objective-based missions, and dangerous military exercises." },
+        { "gamemode": "CUSTOM GAMES", "subtext": "Take your party to combat and objective-based missions that you select and design. Your rules, your maps, your game." },
+        { "gamemode": "FORGE", "subtext": "Take your party to collaborate in real time to edit and play variations of your favorite maps, from the subtle to the insane." },
+        { "gamemode" : "THEATER", "subtext" : "Take your party to view and replay films and footage of your Halo 3 exploits, from Campaign, to Multiplayer, to Forge Mode."}
+  ]
+}

@@ -11,7 +11,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ menu, campaign }) {
+export default function Home({ menu }) {
   return (
     <div>
       <MainMenu items={menu} />
