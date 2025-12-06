@@ -1,0 +1,24 @@
+.homeMenu {
+    backdrop-filter: blur(5px);
+    background-color: #00000032;
+    width: 30%;
+    margin-left: 10%;
+    padding-left: 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    bottom: 0;
+    height: 100%;
+}
+
+.item-text {
+    display: block;
+    color: #8094B4;
+    padding: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.item-text:hover {
+    animation: pulse 2.0s infinite;
+}

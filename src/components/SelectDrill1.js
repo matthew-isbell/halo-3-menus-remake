@@ -2,15 +2,10 @@ import React from 'react';
 
 export default function selectDrill1({ items }) {
 
-    console.log("items: ", items);
-
-
   return (
     <div>
       {items.map((item, index) => {
 
-        console.log("item: ", item);
-        console.log("index: ", index);
         const missions = typeof item === 'string' ? item : item.mission;
         const subtext = typeof item === 'string' ? item : item.subtext;
         const image = typeof item === 'string' ? null : item.image;
