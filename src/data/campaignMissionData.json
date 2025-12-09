@@ -1,0 +1,16 @@
+{
+  "type": "options",
+  "title": "MissionChoices",
+  "items": [
+        { "mission": "ARRIVAL", "subtext": "Brace for impact.", "image": "public/backgrounds/c_005_sm.jpg" },
+        { "mission": "SIERRA 117", "subtext": "Rise up. Start the fight.", "image": "public/backgrounds/c_010_sm.jpg" },
+        { "mission" : "CROW'S NEST", "subtext" : "Clear the base, whatever it takes.", "image" : "public/backgrounds/c_020_sm.jpg"}, 
+        { "mission" : "TSAVO HIGHWAY", "subtext" : "Mount up. get to Voi.", "image" : "public/backgrounds/c_030.jpg"},
+        { "mission" : "THE STORM", "subtext" : "Reclaim the city. Make a hole.", "image" : "public/backgrounds/c_040.jpg"},
+        { "mission" : "FLOODGATE", "subtext" : "Stop the infestation. Find Cortana.", "image" : "public/backgrounds/c_050.jpg"},
+        { "mission" : "THE ARK", "subtext" : "Search the waste for the cartographer.", "image" : "public/backgrounds/c_070.jpg"},
+        { "mission" : "THE COVENANT", "subtext" : "Breach the barrier. Stop Truth.", "image" : "public/backgrounds/c_100.jpg"},
+        { "mission" : "CORTANA", "subtext" : "Cleanse High Charity. Save Cortana.", "image" : "public/backgrounds/c_110.jpg"},
+        { "mission" : "HALO", "subtext" : "Light the ring. Destroy the Flood.", "image" : "public/backgrounds/c_120_sm.jpg"}
+  ]
+}
