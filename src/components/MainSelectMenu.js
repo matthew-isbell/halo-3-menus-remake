@@ -13,14 +13,23 @@ export default function MainSelectMenu({ items }) {
   };
 
   return (
-    <div style={{ position: 'fixed', bottom: '0', left: '0', right: '0', padding: '10px' }}>
+    <div style={{ position: 'fixed', left: '0', right: '0', padding: '10px' }}>
       {items.map((item, index) => {
         const label = typeof item === 'string' ? item : item.label;
-        const isClickable = typeof item === 'object' && item.redirect;
+        const isDisabled = item.disabled || (typeof item === 'string');
+
+
         return (
           <div
+            className="item-text"
             key={index}
-            onClick={() => handleClick(item)}
+            onClick={() => !isDisabled && handleClick(item)}
+            style={isDisabled ? { 
+              pointerEvents: 'none',
+              opacity: 0.5, //greys out the title
+              filter: 'grayscale(100%)',
+              borderBottom: '1px solid grey'
+            } : {}}
           >
             {label}
           </div>

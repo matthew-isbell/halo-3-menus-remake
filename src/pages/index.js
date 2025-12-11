@@ -2,10 +2,18 @@ import MainMenu from '../components/MainSelectMenu';
 import menuData from '../data/mainMenuData.json';
 import campaignData from '../data/campaignMenuData.json';
 
+const noramlized = menuData.items.map((item) => {
+  if (typeof item === 'string') {
+    return { label: item, disabled: true};
+  }
+  return item;
+});
+
+
 export async function getStaticProps() {
   return {
     props: {
-      menu: menuData.items,
+      menu: noramlized,
       campaign: campaignData.items,
     },
   };
@@ -34,8 +42,11 @@ export default function Home({ menu }) {
     }}
     />
 
-    <div className="homeMenu"  style={{ position: 'fixed' }}>
+    {/* adding some extra hard-coded styling specifically for landing page only */}
+    <div className="homeMenu"  style={{ position: 'fixed', height: '45%', width: '21%'}}>
       <MainMenu items={menu} />
+
+      {/* <div style={{position: 'fixed', opacity: 0.5, filter: 'grayscale(100%)'}}>1.2</div> */}
     </div>
     </>
   );

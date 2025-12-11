@@ -1,8 +1,9 @@
+
 .homeMenu {
     backdrop-filter: blur(5px);
     background-color: #00000032;
-    width: 30%;
-    margin-left: 10%;
+    width: 37%;
+    margin-left: 6%;
     padding-left: 0;
     font-family: Arial, sans-serif;
     font-size: 20px;
@@ -12,10 +13,11 @@
 }
 
 .item-text {
+    font-size: 25px;
     padding-left: 10px;
     display: block;
     color: #8094B4;
-    padding: 6px;
+    padding: 10px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }

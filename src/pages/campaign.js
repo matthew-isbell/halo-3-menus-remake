@@ -70,7 +70,7 @@ export default function Campaign({ items, missions, switchLobby, diffSelect }) {
               key={index}
               className="item-text"
               onClick={() => handleMenuClick(label)}
-              style={{ cursor: 'pointer', color: activePanel === label ? '#00d1ff' : 'white' }}
+              style={{ cursor: 'pointer', color: activePanel === label ? '#ffffffff' : '' }}
             >
               {label}
             </div>
