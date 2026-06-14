@@ -63,6 +63,7 @@ export default function Campaign({ items, missions, switchLobby, diffSelect }) {
       <div className="homeMenu" style={{ position: 'fixed' }}>
         <h1 style={{ color: 'white', marginLeft: 10 }}>Campaign Lobby</h1>
 
+        {/* looping through all campaign options */}
         {items.map((item, index) => {
           const label = typeof item === 'string' ? item : item.label;
           return (
@@ -77,10 +78,12 @@ export default function Campaign({ items, missions, switchLobby, diffSelect }) {
           );
         })}
 
-        {renderPanel && (
-          <div style={{ marginTop: 20 }}>{renderPanel}</div>
-        )}
       </div>
+
+      <div style={{ marginTop: '10%' }}>
+        {renderPanel}
+      </div>
+      
     </>
   );
 }
