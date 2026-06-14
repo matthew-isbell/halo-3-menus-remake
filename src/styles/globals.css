@@ -1,0 +1,46 @@
+
+.homeMenu {
+    backdrop-filter: blur(5px);
+    background-color: #00000032;
+    width: 37%;
+    margin-left: 6%;
+    padding-left: 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    bottom: 0;
+    height: 100%;
+}
+
+.item-text {
+    font-size: 25px;
+    padding-left: 10px;
+    display: block;
+    color: #8094B4;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.item-text:hover {
+    animation: pulse 2.0s infinite;
+    cursor: context-menu;
+    background-color: #40568455;
+}
+
+
+/* Define the keyframes for pulsing from light to dark */
+@keyframes pulse {
+    0% {
+        background-color: #54362E; /* Darker */
+        color: #b6b6b6; /* Light text */
+    }
+    50% {
+        background-color: #714834; /* Brighter */
+        color: #b6b6b6; /* Brighter text */
+    }
+    100% {
+        background-color: #54362E; /* Back to darker */
+        color: #b6b6b6;
+    }
+}

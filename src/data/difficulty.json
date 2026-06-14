@@ -1,0 +1,10 @@
+{
+  "type": "difficulty",
+  "title": "missionDifficulty",
+  "items": [
+        { "difficulty": "EASY", "subtext": "Laugh as helpless victims flee in terror fromtheir inevitable slaughter. The game basically plays itself.", "image": "backgrounds/difficulty_ui.png" },
+        { "difficulty": "NORMAL", "subtext": "Facefirm resistance from competent, determined enemies, but burn through enough ammo and you will eventaully triumph.", "image": "backgrounds/difficulty_ui.png" },
+        { "difficulty": "HEROIC", "subtext": "Fight against formidable foes that will truly test your skill and wits; this is the way Halo is meant to be played.", "image": "backgrounds/difficulty_ui.png" },
+        { "difficulty": "LEGENDARY", "subtext": "Tremble as teeming hordes of invincible alien monsters punish the slightest error with instant death... again and again.", "image": "/backgrounds/difficulty_ui.png" }
+  ]
+}
